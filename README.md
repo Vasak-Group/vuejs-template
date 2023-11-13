@@ -1,18 +1,65 @@
-# Vue 3 + TypeScript + Vite
+<p align="center">
+  <a href="https://vuejs.org/" target="blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png" width="200" alt="VueJS Logo" /></a>
+  <a href="https://bun.sh/" target="blank"><img src="https://user-images.githubusercontent.com/709451/182802334-d9c42afe-f35d-4a7b-86ea-9985f73f20c3.png" width="200" alt="Bun Logo" /></a>
+  <a href="https://vitejs.dev/" target="blank"><img src="https://vitejs.dev/logo-with-shadow.png" width="200" alt="Vite Logo" /></a>
+</p>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<p align="center">Template de repositorio para aplicaciones web en <a href="https://vuejs.org/" target="blank">VueJS</a> y <a href="https://bun.sh/" target="blank">bun</a> (utilizando <a href="https://vitejs.dev/" target="blank">Vite</a>) creado por <a href='https://vasak.net.ar' target='_blank'>Vasak Group</a>. Contiene Router y SASS pre-seteados.</p>
 
-## Recommended IDE Setup
+## Instalacion
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Instalacion de dependencias del proyecto
 
-## Type Support For `.vue` Imports in TS
+### Node (yarn)
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+```bash
+yarn install
+```
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+### Bun
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+```bash
+bun install
+```
+
+## Ejecucion
+
+Distintos metodos para ejecutar la aplicacion ya sea que estes usando NodeJS o Bun
+
+### NodeJS (yarn)
+
+```bash
+# watch mode
+yarn run dev
+
+# production mode
+yarn run preview
+```
+
+### Bun
+
+```bash
+# watch mode
+bun run dev:bun
+
+# production mode
+bun run preview:bun
+```
+
+## Build
+
+Distintos metodos para compilar la aplicacion ya sea que estes usando NodeJS o Bun
+
+### NodeJS (yarn)
+
+```bash
+# build for production
+yarn run build
+```
+
+### Bun
+
+```bash
+# build for production
+bun run build:bun
+```
